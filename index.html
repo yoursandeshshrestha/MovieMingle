@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Movies & TVshows</title>
+
+    <!-- fav-icon -->
+    <link type="image/png" sizes="32x32" rel="icon" href="./fav icon/favicon.svg"/>
+
+    <!-- Font-Awesome & ionicons CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <!-- This is main container -->
+    <div class="container">
+      <!-- This is nav -->
+      <nav>
+        <div class="title">
+          <h1>Discover</h1>
+          <form class="search-box">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search Movies.."
+              value=""
+              autocomplete="off"
+              onsubmit=""
+            />
+            <i class="ion-search active"></i>
+          </form>
+        </div>
+
+        <ul class="nav-links">
+          <div class="normal">
+            <li>
+              <a href="/index.html"
+                ><i class="fa-solid fa-house"></i>
+                <p>Home</p></a
+              >
+            </li>
+            <li>
+              <a href="./movies/movie.html"
+                ><i class="fa-solid fa-film"></i>
+                <p>Movies</p></a
+              >
+            </li>
+            <li>
+              <a href="./tv/tv.html"
+                ><i class="fa-solid fa-tv"></i>
+                <p>Tv</p></a
+              >
+            </li>
+            <li>
+              <a href="./people/people.html"
+                ><i class="fa-solid fa-user-group"></i>
+                <p>People</p></a
+              >
+            </li>
+          </div>
+
+          <div class="watchlist">
+            <li>
+              <a href="./watchlist/watchlist.html"
+                ><i class="fa-solid fa-bookmark"></i>
+                <p>Watchlist</p></a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <!-- This is nav -->
+
+      <div class="findmovies"></div>
+
+      <h1 class="trending-h1">Trending</h1>
+
+      <div class="movie-show-icon">
+        <a href="./index.html"><li>Popular</li></a>
+        <a href="./tvshow/tvshow.html"><li>Upcoming</li></a>
+      </div>
+
+      <section class="trending">
+        <div class="trending-movie-container slider" id="slider-container">
+          <div onclick="prev()" class="control-prev-btn">
+            <i class="ion-ios-arrow-back"></i>
+          </div>
+          <!------------- This Part will come from Javasript -------------->
+          <div onclick="next()" class="control-next-btn">
+            <i class="ion-ios-arrow-forward"></i>
+          </div>
+        </div>
+      </section>
+
+      <h1 class="bollywood-h1">Bollywood</h1>
+
+      <section class="bollywood slider2">
+        <div onclick="prev2()" class="control-prev-btn2">
+          <i class="ion-ios-arrow-back"></i>
+        </div>
+        <!-- <div class="movie_card" id="tomb">
+                <div class="info_section">
+                  <div class="movie_header">
+                    <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg"/>
+                    <h1>Tomb Raider</h1>
+                    <h4>2018, Roar Uthaug</h4>
+                    <span class="minutes">125 min</span>
+                    <p class="type">Action, Fantasy</p>
+                  </div>
+                  <div class="movie_desc">
+                    <p class="text">
+                      Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.
+                    </p>
+                  </div>
+                  <div class="movie_social">
+                    <ul>
+                      <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i>  7.1</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="blur_back tomb_back" style="background: url()"></div>
+              </div>      -->
+        <div onclick="next2()" class="control-next-btn2">
+          <i class="ion-ios-arrow-forward"></i>
+        </div>
+      </section>
+
+      <section class="bollywood2"></section>
+
+      <h1 class="japanese-h1">Japanese</h1>
+
+      <section class="japanese">
+        <div class="japanese-movie-container">
+          <!-- This will come from javascript -->
+        </div>
+      </section>
+
+      <h1 class="korean-h1">korean</h1>
+
+      <section class="korean">
+        <!-- <div onclick="prev4()" class="control-prev-btn4">
+                <i class="ion-ios-arrow-back"></i>
+             </div> -->
+        <!-- <div class="movie_card" id="tomb">
+                <div class="info_section">
+                  <div class="movie_header">
+                    <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg"/>
+                    <h1>Tomb Raider</h1>
+                    <h4>2018, Roar Uthaug</h4>
+                    <span class="minutes">125 min</span>
+                    <p class="type">Action, Fantasy</p>
+                  </div>
+                  <div class="movie_desc">
+                    <p class="text">
+                      Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.
+                    </p>
+                  </div>
+                  <div class="movie_social">
+                    <ul>
+                      <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i>  7.1</p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="blur_back tomb_back" style="background: url()"></div>
+              </div>      -->
+        <!-- <div onclick="next4()" class="control-next-btn4">
+                <i class="ion-ios-arrow-forward"></i>
+              </div> -->
+      </section>
+
+      <section class="korean2"></section>
+
+      <!-- TV Show -->
+      <section class="Tv-shows">
+        <!-- <div class="movie_card" id="tomb">
+              <div class="info_section">
+                <div class="movie_header">
+                  <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg"/>
+                  <h1>Tomb Raider</h1>
+                  <h4>2018, Roar Uthaug</h4>
+                  <span class="minutes">125 min</span>
+                  <p class="type">Action, Fantasy</p>
+                </div>
+                <div class="movie_desc">
+                  <p class="text">
+                    Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she finds herself on the island where her father disappeared.
+                  </p>
+                </div>
+                <div class="movie_social">
+                  <ul>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i>  7.1</p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blur_back tomb_back" style="background: url()"></div>
+            </div>      -->
+      </section>
+
+      <button class="load-button">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+    </div>
+    <!-- This is main container -->
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

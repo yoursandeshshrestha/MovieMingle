@@ -1,0 +1,145 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root{
+    --background: rgb(0, 0, 0);
+    --font-color-gray: #DDDCDF;
+    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+    --on-background: hsla(220, 100%, 95%, 1);
+  
+    /* Font */
+    --font-roboto: "Roboto", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+  }
+  
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+  
+  *{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  html, body{
+    font-family: var(--font-poppins);
+    background: var(--background);
+    color: var(--font-color-gray);
+  }
+  
+  img{
+    color: white;
+  }
+  
+  
+  /*-----------------------------------*\
+    #REUSED STYLE
+  \*-----------------------------------*/
+  
+  .container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /*-----------------------------------*\
+  #NAV
+  \*-----------------------------------*/
+  
+  nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  nav h1{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title .search-box{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    background: #121416;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 6px;
+  }
+  
+  .title .search-box input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .title .search-box button{
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .title .search-box button i{
+    font-size: 20px;
+  }
+  
+  /*-----------------------------------*\
+    #NAV LINKS
+  \*-----------------------------------*/
+  
+  .nav-links{
+    display: flex;
+    gap: 13px;
+    overflow-x: scroll;
+  }
+  
+  .nav-links li a{
+    color: white;
+    outline: none;
+    border: none;
+    min-width: fit-content;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #121416;
+    padding: 7px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-links li a:is(:link, :active, :visited).active {
+    background: gainsboro;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .nav-links >li> p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  
+  

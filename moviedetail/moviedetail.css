@@ -1,0 +1,231 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+  --background: rgb(0, 0, 0);
+  --font-color-gray: #dddcdf;
+  --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+  --on-background: hsla(220, 100%, 95%, 1);
+  --gray-2: rgba(255, 255, 255, 0.444);
+
+  /* Font */
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  font-family: var(--font-poppins);
+  background: var(--background);
+  color: var(--font-color-gray);
+}
+
+img {
+  color: white;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  height: 95vh;
+  /* overflow: hidden; */
+}
+
+/*-----------------------------------*\
+  #NAV
+\*-----------------------------------*/
+
+nav a {
+  color: white;
+  font-size: 20px;
+}
+
+/*-----------------------------------*\
+  #Wrapper
+\*-----------------------------------*/
+
+.movie-wrapper {
+  display: flex;
+  gap: 50px;
+  padding: 0 50px;
+}
+
+/*-----------------------------------*\
+  #Images
+\*-----------------------------------*/
+
+.image {
+  height: 550px;
+  position: relative;
+}
+
+.image > img {
+  border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image i {
+  position: absolute;
+  font-size: 18px;
+  padding: 12px;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.614);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-top-right-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/*-----------------------------------*\
+  #Info
+\*-----------------------------------*/
+
+.little-desc {
+  color: var(--gray-2);
+}
+
+.info {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.little-desc {
+  display: flex;
+  gap: 15px;
+}
+
+.movie-rating {
+  font-size: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.overview-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overview-title{
+  margin-bottom: 10px;
+}
+
+.movie-more-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--gray-2);
+  width: 600px;
+}
+
+.starring-info,
+.created-by,
+.genre {
+  display: flex;
+  justify-content: space-between;
+}
+
+.starring-info p:last-child,
+.created-by p:last-child,
+.genre p:last-child {
+  color: white;
+}
+
+.overview-title {
+  color: rgba(255, 255, 255, 0.705);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buy-container{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buy-container p{
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.buy-container img{
+  width: 50px;
+}
+
+.buy-image{
+  display: flex;
+  gap: 15px;
+}
+
+.buy-image img{
+  border-radius: 10px;
+}
+
+.buy-image>p{
+  color: var(--font-color-gray);
+}
+
+.trailer{
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+  overflow: scroll;
+}
+
+.trailer p{
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.overview{
+  overflow-Y: scroll;
+}
+
+.info{
+  overflow-Y: scroll;
+}
+
+.tailer .video-section {
+  border-radius: 100px;
+}

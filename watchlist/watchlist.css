@@ -1,0 +1,154 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root{
+    --background: rgb(0, 0, 0);
+    --font-color-gray: #DDDCDF;
+    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+    --on-background: hsla(220, 100%, 95%, 1);
+    --gray-2: rgba(255, 255, 255, 0.444);
+    
+    /* Font */
+    --font-roboto: "Roboto", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+  }
+    
+  /*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+    
+  *{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+    
+  a{
+    text-decoration: none;
+  }
+    
+  li{
+    list-style: none;
+    }
+    
+  html, body{
+    font-family: var(--font-poppins);
+    background: var(--background);
+    color: var(--font-color-gray);
+  }
+    
+  img{
+    color: white;
+  }
+    
+    
+  /*-----------------------------------*\
+    #REUSED STYLE
+  \*-----------------------------------*/
+    
+  .container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+.fav-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+a{
+    color: var(--font-color-gray);
+}
+
+/*-----------------------------------*\
+  #Reuseable Container for small movie 
+\*-----------------------------------*/
+
+.resuable-movies-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+  
+.resuable-movies-image{
+    width: 210px;
+    position: relative;
+  }
+  
+  .resuable-movies-image img{
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .resuable-movies-name{
+    width: 210px;
+    display: flex;
+    padding: 2px 10px;
+    justify-content: space-between;
+  }
+  
+  .resuable-movies-name > p:first-child{
+    width: 75%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .resuable-movies-image p:nth-child(2){
+    position: absolute;
+    font-size: 13px;
+    padding: 2px 6px;
+    top: 8px;
+    right: 12px;
+    background: rgba( 0, 0, 0, 0.5 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    z-index: 2;
+  }
+
+.resuable-movies-wrapper button{
+    margin-top: 10px;
+    display: block;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.533);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+/*-----------------------------------*\
+  #Reuseable Container for 230px movie 
+\*-----------------------------------*/
+
+.resuable-movies-image-230px{
+  width: 230px;
+  position: relative;
+}
+
+.resuable-movies-image-230px p {
+  position: absolute;
+  font-size: 13px;
+  padding: 2px 6px;
+  top: 8px;
+  right: 12px;
+  background: rgba( 0, 0, 0, 0.5 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.resuable-movies-image-230px img{
+  border-radius: 10px;
+  width: 100%;
+}

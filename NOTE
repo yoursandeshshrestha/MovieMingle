@@ -1,0 +1,120 @@
+/* -----------------------------------*\
+  #RESUABLE WRAPPER FOR NORMAL img
+\*-----------------------------------*/
+
+<div class="resuable-movies-wrapper">
+  <a href="./moviedetail/moviedetail.html">
+    <div class="resuable-movies-image">
+      <img src="./images/slider-control.jpg" />
+      <p class="rating">
+        <i class="fa-solid fa-star" style="color: #ffd43b"></i> 7.1
+      </p>
+      <i
+        class="fa-solid fa-bookmark"
+        onClick="addTofavorites(id)"
+        style="cursor: pointer"
+      ></i>
+    </div>
+    <div class="resuable-movies-name">
+      <p>Puss in boots</p>
+      <p>2022</p>
+    </div>
+  </a>
+</div>
+
+/* -----------------------------------*\
+  #RESUABLE WRAPPER FOR 230px img
+\*-----------------------------------*/
+
+<div class="resuable-movies-wrapper">
+  <a href="./moviedetail/moviedetail.html">
+    <div class="resuable-movies-image-230px">
+      <img src="./images/slider-control.jpg" />
+      <p class="rating">
+        <i class="fa-solid fa-star" style="color: #ffd43b"></i> 7.1
+      </p>
+    </div>
+    <div class="resuable-movies-name">
+      <p>Puss in boots</p>
+      <p>2022</p>
+    </div>
+  </a>
+</div>
+
+/*-----------------------------------*\
+  #CSS for small img movie 
+\*-----------------------------------*/
+
+.resuable-movies-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.resuable-movies-image{
+  width: 210px;
+  position: relative;
+}
+
+.resuable-movies-image img{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.resuable-movies-name{
+  width: 210px;
+  display: flex;
+  padding: 2px 10px;
+  justify-content: space-between;
+}
+
+.resuable-movies-name > p:first-child{
+  width: 75%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.resuable-movies-image p:nth-child(2){
+  position: absolute;
+  font-size: 13px;
+  padding: 2px 6px;
+  top: 8px;
+  right: 12px;
+  background: rgba( 0, 0, 0, 0.5 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  z-index: 2;
+}
+
+/*-----------------------------------*\
+  #CSS for 230px image movie
+\*-----------------------------------*/
+
+.resuable-movies-image-230px{
+  width: 230px;
+  position: relative;
+}
+
+.resuable-movies-image-230px p {
+  position: absolute;
+  font-size: 13px;
+  padding: 2px 6px;
+  top: 8px;
+  right: 12px;
+  background: rgba( 0, 0, 0, 0.5 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+
+.resuable-movies-image-230px img{
+  border-radius: 10px;
+  width: 100%;
+}

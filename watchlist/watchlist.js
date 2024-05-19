@@ -30,7 +30,7 @@ async function favoritesMovieLoader() {
                         <p>${year}</p>
                     </div>
                 </a>
-                <button onClick=removeFromfavorites('${movie.id}')><i class="ion-trash-b" style="color: red;"></i></button>
+                <button onClick=removeFromfavorites('${movie.id}')><i class="ion-trash-b" style="color: white;"></i>Delete</button>
             </div>
 
        `;

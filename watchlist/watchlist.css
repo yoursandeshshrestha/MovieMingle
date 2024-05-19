@@ -117,9 +117,9 @@ a{
     margin-top: 10px;
     display: block;
     outline: none;
-    background-color: rgba(128, 128, 128, 0.533);
+    background-color: rgba(128, 128, 128, 0.378);
     padding: 5px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
@@ -151,4 +151,8 @@ a{
 .resuable-movies-image-230px img{
   border-radius: 10px;
   width: 100%;
+}
+
+.fa-trash{
+  
 }
